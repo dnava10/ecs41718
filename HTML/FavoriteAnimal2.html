@@ -17,50 +17,83 @@
          body{
             background-color: orange;
         }
+        .nav-item{
+            font-family: courier new;
+        }
     </style>
        </head>
        <body>
+           <div class="container" style="background-color:red; text-align:center">
+               <a href="https://en.wikipedia.org/wiki/Hedgehog" class="btn btn-primary btn-lg" role="button" style="color: orange">Wikipedia</a>
+               <a href="http://mentalfloss.com/article/56004/16-fun-facts-about-hedgehogs" class="btn btn-primary btn-lg" role="button" style="color: orange">Fun Facts</a>
+               <a href="http://hedgehogheadquarters.com/secure/aspets.htm" class="btn btn-primary btn-lg" role="button" style="color: orange" >Information for Ownership</a>
+           </div>   
           <div class="jumbotron">
               <h1 style="font-size:60px;"> Hedgehog </h1>
               <p style="font-size:30px;">Erinaceinae</p>
           </div>
+          <div>
+          <nav class="navbar navbar-expand-xl bg-danger">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="https://dnava10.github.io/ecs41718/HTML/practice1.html" style="color: orange">Practice1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://dnava10.github.io/ecs41718/HTML/table1.html" style="color: orange">Tables1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://dnava10.github.io/ecs41718/HTML/FavoriteAnimal.html" style="color: orange">Favorite Animal</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+          </br>
           <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-xl-4">
                     <div class="thumbnail">
                         <a href="http://images.mentalfloss.com/sites/default/files/styles/mf_image_3x2/public/iStock-496545234.jpg?itok=qfHuTTB-&resize=1100x740"
                         target="_blank">
                             <img src="http://images.mentalfloss.com/sites/default/files/styles/mf_image_3x2/public/iStock-496545234.jpg?itok=qfHuTTB-&resize=1100x740"
                             alt="A hedgehog outside on the grass." style="width:70%">
-                            <div class="caption" style="font-family:courier">
+                            <div class="caption" style="font-family:courier; color: red">
                                 <p>The image is from website that has fun facts about hedgehogs.</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4">
                     <div class="thumbnail">
                         <a href="https://bethwesson.files.wordpress.com/2015/08/img_0427.jpg"
                         target="_blank">
                             <img src="https://bethwesson.files.wordpress.com/2015/08/img_0427.jpg"
                             alt="A hedgehog yawning." style="width:70%">
-                            <div class="caption" style="font-family:courier">
+                            <div class="caption" style="font-family:courier; color: red">
                                 <p>The image is from a blog that talks about nature.</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4">
                     <div class="thumbnail">
                         <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkt1G5BcbHZh0ORaMofmzzDOBDYs95wjaM2cIk91_rAge4tMnS"
                         target="_blank">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkt1G5BcbHZh0ORaMofmzzDOBDYs95wjaM2cIk91_rAge4tMnS"
                             alt="A hedgehog eating food." style="width:55%">
-                            <div class="caption" style="font-family:courier">
+                            <div class="caption" style="font-family:courier; color: red">
                                 <p>The image is from a website that talks about garden wildlife.</p>
                             </div>
                         </a>
                     </div>
+                </div>
+                <div class="container">
+                  <button type="button" class="btn btn-danger btn-lg" data-toggle="collapse" data-target="#paragraph" style="font-family:courier new; text-align:center;color: orange">History of Hedgehogs</button>
+                  <div id="paragraph" class="collapse" style="font-family:courier new; color: red">
+                    Hedgehogs are mammals that live about seven years. 
+                    They are carinvores that live in grasslands, woodlands, and in meadows.
+                    Hedgehogs are known for their prickly spines which they use for defense when they sleep and when they face enemies.
+                    There are fifteen different species of hedgehog. They are found around Europe, Asia, and Africa.
+                  </div>
                 </div>
        </body>
 </html>
