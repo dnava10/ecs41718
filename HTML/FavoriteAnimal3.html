@@ -21,19 +21,44 @@
         .nav-item{
             font-family: courier new;
         }
+        carousel-innner img {
+            width:100%;
+            height:100%;
+            margin: auto;
+        }
     </style>
        </head>
-       <body>
+       <body data-spy="scroll" data-target=".navbar" data-offset="10">
+           <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link" href="#section1">Section 1</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#section2">Section 2</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#section3">Section 3</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#section4">Section 4</a>
+               </li>
+            </nav>
+               
+               
+               
+         <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">       
            <div class="container" style="background-color:red; text-align:center">
-               <a href="https://en.wikipedia.org/wiki/Hedgehog" class="btn btn-primary btn-lg" role="button" style="color: orange">Wikipedia</a>
-               <a href="http://mentalfloss.com/article/56004/16-fun-facts-about-hedgehogs" class="btn btn-primary btn-lg" role="button" style="color: orange">Fun Facts</a>
-               <a href="http://hedgehogheadquarters.com/secure/aspets.htm" class="btn btn-primary btn-lg" role="button" style="color: orange" >Information for Ownership</a>
+               <a href="https://en.wikipedia.org/wiki/Hedgehog" class="btn btn-primary btn-lg" role="button" style="color: orange" data-toggle="tooltip" title="Information about Hedgehogs">Wikipedia</a>
+               <a href="http://mentalfloss.com/article/56004/16-fun-facts-about-hedgehogs" class="btn btn-primary btn-lg" role="button" style="color: orange" data-toggle="tooltip" title="Interesting facts about Hedgehogs">Fun Facts</a>
+               <a href="http://hedgehogheadquarters.com/secure/aspets.htm" class="btn btn-primary btn-lg" role="button" style="color: orange" data-toggle="tooltip" title="Important Information for Owning a Hedgehog" >Information for Ownership</a>
            </div>
           <div class="jumbotron">
               <h1 style="font-size:60px;"> Hedgehog </h1>
               <p style="font-size:30px;">Erinaceinae</p>
           </div>
-          <div>
+        </div>  
+          <div id="section2" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
           <nav class="navbar navbar-expand-xl bg-danger" id="section2">
             <ul class="nav justify-content-center">
               <li class="nav-item">
@@ -49,7 +74,7 @@
           </nav>
           </div>
           </br>
-          <div class="container">
+          <div class="container container-fluid bg-info" id="section3" style="padding-top:70px;padding-bottom:70px" >
             <div class="row">
                 <div class="col-xl-4">
                     <div class="thumbnail">
@@ -88,38 +113,41 @@
                     </div>
                 </div>
                 <div class="container">
-                  <button type="button" class="btn btn-danger btn-lg" data-toggle="collapse" data-target="#paragraph" style="font-family:courier new; text-align:center;color: orange">History of Hedgehogs</button>
-                  <div id="paragraph" class="collapse" style="font-family:courier new; color: red">
+                  <button type="button" class="btn btn-danger btn-lg" data-toggle="collapse" data-target="#section 4" style="font-family:courier new; text-align:center;color: orange">History of Hedgehogs</button>
+                  <div id="section 4" class="collapse container-fluid bg-success" style="font-family:courier new; color: red; padding-top:70px;padding-bottom:70px">
                     Hedgehogs are mammals that live about seven years. 
                     They are carinvores that live in grasslands, woodlands, and in meadows.
                     Hedgehogs are known for their prickly spines which they use for defense when they sleep and when they face enemies.
                     There are fifteen different species of hedgehog. They are found around Europe, Asia, and Africa.
                   </div>
                 </div>
-                <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div id="h" class="carousel slide" data-ride="carousel">
                     <ul class="carousel-indicators">
-                      <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel" data-slide-to="1"></li>
-                      <li data-target="#carousel" data-slide-to="2"></li>
+                      <li data-target="#h" data-slide-to="0" class="active"></li>
+                      <li data-target="#h" data-slide-to="1"></li>
+                      <li data-target="#h" data-slide-to="2"></li>
+                      <li data-target="#h" data-slide-to="3"></li>
                     </ul>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="la.jpg" alt="" width="1100" height="500">
+                        <img src="https://media.mnn.com/assets/images/2016/11/Hedgehog-Flowers-Meadow-Field.jpg.653x0_q80_crop-smart.jpg" alt="Hedgehog in grass" width="300" height="300">
                       </div>
                       <div class="carousel-item">
-                        <img src="chicago.jpg" alt="" width="1100" height="500">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoB5MBwpUG16nuy-K6Q2GGHlK6xfxSH3xmi2X4y0HLnxzg7Qcb" alt="Hedgehog in a log" width="300" height="300">
                       </div>
                       <div class="carousel-item">
-                        <img src="ny.jpg" alt="" width="1100" height="500">
+                        <img src="https://fthmb.tqn.com/R9w9ItTvPsIZM0aYud4UoOpJNLs=/2121x1414/filters:fill(auto,1)/Hedgehog-GettyImages-565108849-58a3f6f23df78c4758dd5901.jpg" alt="Two hedgehogs in grass" width="300" height="300">
                       </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </a>
-              </div>
+                      <div class="carousel-item">
+                          <img src="http://www.wildlifetrusts.org/sites/default/files/images/Hedgehog%20-%20September%202011%20Gillian%20Day%209.JPG" alt="Hedgehog in grass" width="300" height="300">
+                      </div>
+                      </div>
+               <a class="carousel-control-prev" href="#h" data-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a class="carousel-control-next" href="#h" data-slide="next">
+                 <span class="carousel-control-next-icon"></span>
+               </a>
+               </div>
        </body>
 </html>
