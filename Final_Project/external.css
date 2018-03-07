@@ -1,12 +1,13 @@
 body {
-    background: linear-gradient(to right,#77C9D4,#57BC90);
+    background: linear-gradient(to bottom right,#77C9D4,#57BC90);
     font-family: courier new;
-    color: #77C9D4;
+    color: #015209;
     position:relative;
 }
 .jumbotron {
     text-align:center;
     padding-top:50px;
+    background: linear-gradient(to bottom right,#77C9D4,#57BC90);
 }
 .carousel img {
     width:100%;
@@ -90,5 +91,30 @@ body {
 .carousel-caption{
   color:#015249 ;
   background-color:#57BC90;
-  height:87px;
+  height:67px;
+  font-size:14px;
+  padding-top:11px;
+}
+.nav-link{
+  color:#57BC90;
+}
+.navbar-brand{
+  color:#77C9D4;
+}
+.caption{
+  color:#015249;
+  text-align:center;
+}
+.alt{
+  color:#015249;
+}
+.thumbnail{
+  text-align:center;
+}
+.family{
+  color:#015249;
+  -ms-transform: rotate(90deg); /* IE 9 */
+-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+transform: rotate(90deg);
+text-align:center;
 }
