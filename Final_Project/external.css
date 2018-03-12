@@ -60,12 +60,13 @@ body {
   border-radius: 10px;
   border: 1px solid #000000;
   background-color: #77C9D4;
+  text-align:center;
 }
 .navbar-toggler-icon,.btn-info,navbar-toggler{
     background-color:#77C9D4;
 }
-.carousel-indicators .third {
-    display: inline-block;
+.carousel-indicators.picture {
+  display: inline-block;
   width: 12px;
   height: 12px;
   margin: 0;
